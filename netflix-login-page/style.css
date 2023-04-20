@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("https://assets.nflxext.com/ffe/siteui/vlv3/efb4855d-e702-43e5-9997-bba0154152e0/d583cb90-3cfe-4469-a6ef-6d9e13c31f77/PH-en-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.logo{
+    position: relative;
+    width: 200px;
+    padding: 8px 12px;
+}
+.container{
+    display: block;
+    width: 320px;
+    margin: 50px auto;
+    padding: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+}
+.container h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.container .form-element {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+.form-element input {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: inherit;
+    padding: 16px 20px 0 20px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #444444;
+    color: #ffffff;
+}
+.floating-label {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    font-size: 16px;
+    cursor: text;
+    color: #8c8c8c;
+}
+.btn {
+    width: 100%;
+    height: 50px;
+    margin-top: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #e50914;
+}
+
+input:focus ~ .floating-label,
+input:valid ~ .floating-label {
+    font-size: 11px;
+    top: 7px;
+    opacity: unset;
+}
